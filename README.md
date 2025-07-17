@@ -1,135 +1,205 @@
-Excel-8
+# 🧬 Excel-8
 
-Project Description
+![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+![Excel](https://img.shields.io/badge/Microsoft-Excel-blue.svg)
 
-Excel-8 is a guide to working with text. Excel has many functions to offer when it comes to manipulating text strings. Here you'll find practical tips, instructions, and illustrations about those functions.
+## ✨ Project Description
 
-Table of Contents
+**Excel-8** is a guide to working with text in Microsoft Excel. Explore practical tips, instructions, and illustrations for manipulating text strings using functions like LEFT, RIGHT, MID, LEN, FIND, SUBSTITUTE, TRIM, Text To Columns, SEARCH, UPPER, LOWER, PROPER, EXACT, TEXT, CONCATENATE, TEXTJOIN, TEXTBEFORE, TEXTAFTER, and more.
 
-Join Strings
+> 📚 **Goal:** Help you master text operations in Excel—suitable for both beginners and advanced users!
 
-To join strings, use the & operator.
+> 🔗 **Note:** Many operations on text can be performed using Flash Fill described in [Excel-1 repository](https://github.com/Kuba27x/Excel-1).
 
-![screenshot](Screenshots/&.png)
+---
 
-(Note: instead of using the & operator, you can use the CONCATENATE function.)
+## 📒 Table of Contents
 
-LEFT
+- [Join Strings](#-join-strings)
+- [LEFT](#-left)
+- [RIGHT](#-right)
+- [MID](#-mid)
+- [LEN](#-len)
+- [FIND & SEARCH](#-find--search)
+- [SUBSTITUTE & REPLACE](#-substitute--replace)
+- [TRIM & Counting Words](#-trim--counting-words)
+- [Text to Columns](#-text-to-columns)
+- [Change Case](#-change-case)
+- [Compare Text](#-compare-text)
+- [TEXT Function](#-text-function)
+- [TEXTJOIN, TEXTBEFORE, TEXTAFTER](#-textjoin-textbefore-textafter)
+- [Screenshots](#-screenshots)
+- [Requirements](#-requirements)
+- [Author](#-author)
 
-To extract the leftmost characters from a string, use the LEFT function.
+---
 
-![screenshot](Screenshots/Left.png)
+## ➕ Join Strings
 
-RIGHT
+To join strings, use the `&` operator.
 
-To extract the rightmost characters from a string, use the RIGHT function.
+![Join](Screenshots/&.png)
 
-![screenshot](Screenshots/Right.png)
+Alternatively, use the `CONCATENATE` function.
 
-MID
+---
 
-To extract a substring, starting in the middle of a string, use the MID function.
+## 🔡 LEFT
 
-![screenshot](Screenshots/Mid.png)
+Extract the leftmost characters from a string:
 
-LEN
+![Left](Screenshots/Left.png)
 
-To get the length of a string, use the LEN function.
+---
 
-![screenshot](Screenshots/Len.png)
+## 🔢 RIGHT
 
-FIND
+Extract the rightmost characters from a string:
 
-To find the position of a substring in a string, use the FIND function.
+![Right](Screenshots/Right.png)
 
-![screenshot](Screenshots/Find.png)
+---
 
-(Note: You can also use the SEARCH function. SEARCH function in Excel is case-insensitive and supports wildcards.
+## 🎯 MID
 
-SUBSTITUTE
+Extract a substring starting from the middle of a string:
 
-To replace existing text with new text in a string, use the SUBSTITUTE function.
+![Mid](Screenshots/Mid.png)
 
-![screenshot](Screenshots/Substitute.png)
+---
 
-(Note: If you only know the position of the text to be replaced, use the REPLACE function.)
+## 🔠 LEN
 
-Count words
+Get the length of a string:
 
-TRIM
+![Len](Screenshots/Len.png)
 
-1. The TRIM function below returns a string with only regular spaces.
+---
 
-![screenshot](Screenshots/Trim.png)
+## 🔍 FIND & SEARCH
 
-To get the length of the string without spaces, use this formula.
+Find the position of a substring:
 
-![screenshot](Screenshots/LenS.png)
+- `FIND` (case-sensitive)
+- `SEARCH` (case-insensitive, supports wildcards)
 
-To get the number of words use this formula.
+![Find](Screenshots/Find.png)
 
-![screenshot](Screenshots/Words.png)
+---
 
-(Note: to count the total number of words in a cell, simply count the number of spaces and add 1 to this result. 1 space means 2 words, 2 spaces means 3 words)
+## 🔁 SUBSTITUTE & REPLACE
 
-Text to Columns
+Replace existing text in a string:
+
+- `SUBSTITUTE` replaces occurrences of text.
+- `REPLACE` is useful when you know the position.
+
+![Substitute](Screenshots/Substitute.png)
+
+---
+
+## 🧹 TRIM & Counting Words
+
+- `TRIM` returns a string with only regular spaces.
+
+![Trim](Screenshots/Trim.png)
+
+- To get the length of the string without spaces:
+
+![LenS](Screenshots/LenS.png)
+
+- To count the number of words:
+
+![Words](Screenshots/Words.png)
+
+> ℹ️ **Tip:** Count the spaces in a cell and add 1 to get the total number of words.
+
+---
+
+## ✂️ Text to Columns
 
 1. Select the range with full names.
-2. On the Data tab, in the Data Tools group, click Text to Columns.
-3. Choose Delimited and click Next.
+2. On the Data tab, in the Data Tools group, click **Text to Columns**.
+3. Choose **Delimited** and click **Next**.
 
-![screenshot](Screenshots/TextToColumns.png)
+![TextToColumns](Screenshots/TextToColumns.png)
 
-4. Clear all the check boxes under Delimiters except for the Comma and Space check box.
+4. Clear all checkboxes except for Comma and Space.
 
-![screenshot](Screenshots/Options.png)
+![Options](Screenshots/Options.png)
 
-5. Click Finish.
-   
-Result:
+5. Click **Finish**.
 
-![screenshot](Screenshots/Result.png)
+**Result:**
 
-Change case
+![Result](Screenshots/Result.png)
 
-Use the UPPER function in Excel to change the case of text to uppercase.
+---
 
-![screenshot](Screenshots/Upper.png)
+## ↕️ Change Case
 
-(Note: Use the LOWER function in Excel to change the case of text to lowercase.)
+- Use `UPPER` to change text to uppercase:
 
-Use the PROPER function in Excel to change the first letter of each word to uppercase and all other letters to lowercase.
+![Upper](Screenshots/Upper.png)
 
-![screenshot](Screenshots/Proper.png)
+- Use `LOWER` for lowercase.
+- Use `PROPER` for capitalizing the first letter of each word:
 
-Compare Text 
+![Proper](Screenshots/Proper.png)
 
-Use the EXACT function (case-sensitive).
+---
 
-![screenshot](Screenshots/Exact.png)
+## 🆚 Compare Text
 
-Use the formula =F1=G1 (case-insensitive).
+- Use `EXACT` for case-sensitive comparison:
 
-![screenshot](Screenshots/=.png)
+![Exact](Screenshots/Exact.png)
 
-TEXT 
+- Use `=F1=G1` for case-insensitive comparison:
 
-When joining text and a number, use the TEXT function in Excel to format that number.
+![=](Screenshots/=.png)
 
-![screenshot](Screenshots/Text.png)
+---
 
-(Note: #,## is used to add commas to large numbers.)
+## 🧾 TEXT Function
 
-TEXTJOIN
+Format numbers when joining text and numbers:
 
-The TEXTJOIN function in Excel 2016 or later joins a range of strings using a delimiter (first argument). It is very cool because it can ignore empty cells (if the second argument is set to TRUE).
+![Text](Screenshots/Text.png)
 
-![screenshot](Screenshots/TextJoin.png)
+> `#,##` adds commas to large numbers.
 
-If you have Excel 365, use TEXTBEFORE or TEXTAFTER to extract substrings in Excel.
+---
 
-![screenshot](Screenshots/TextBefore.png)
-![screenshot](Screenshots/TextAfter.png)
+## 🔗 TEXTJOIN, TEXTBEFORE, TEXTAFTER
 
-(Note: many operations on text can be performed using Flash Fill described in Excel-1 repository)
+- `TEXTJOIN` (Excel 2016+) joins a range of strings using a delimiter, can ignore empty cells.
 
+![TextJoin](Screenshots/TextJoin.png)
+
+- In Excel 365, use `TEXTBEFORE` or `TEXTAFTER` to extract substrings:
+
+![TextBefore](Screenshots/TextBefore.png)
+![TextAfter](Screenshots/TextAfter.png)
+
+---
+
+## 📷 Screenshots
+
+Find all screenshots in the `/Screenshots` folder.
+
+---
+
+## ℹ️ Requirements
+
+- Microsoft Excel (recommended: 2016/2021/365 for modern functions)
+- Windows OS for full functionality
+
+---
+
+## 👨‍💻 Author
+
+Project and documentation by **Kuba27x**  
+Repository: [Kuba27x/Excel-8](https://github.com/Kuba27x/Excel-8)
+
+---
